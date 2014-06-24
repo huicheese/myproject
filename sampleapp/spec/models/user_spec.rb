@@ -3,15 +3,26 @@
 # RSpec.describe User, :type => :model do
 #   pending "add some examples to (or delete) #{__FILE__}"
 # end
-require 'rails_helper'
+
 require 'spec_helper'
 
 describe User do
 
   before do
     @user = User.new(name: "Example User", email: "user@example.com",
-                     password: " ", password_confirmation: " ")
+                     password: "foobar", password_confirmation: "foobar")
   end
+
+  describe "remember token" do
+    before { @user.save }
+    its(:remember_token) { should_not be_blank }
+  end
+
+  private
+
+    def create_remember_token
+      #Create the token.
+    end
 
   subject { @user }
 
@@ -21,6 +32,7 @@ describe User do
   it { should respond_to(:password) }
   it { should respond_to(:password_confirmation) }
   it { should respond_to(:authenticate) }
+  it { should respond_to(:remember_token) }
 
   it { should be_valid }
 
