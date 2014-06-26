@@ -13999,3 +13999,2147 @@ ActionView::Template::Error (First argument in form cannot contain nil or be emp
   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-25 13:53:06 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered static_pages/home.html.erb within layouts/application (14.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 272ms (Views: 198.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-06-25 13:53:07 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-06-25 13:53:07 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-06-25 13:53:07 +0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-06-25 13:53:07 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-25 13:53:07 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-25 13:53:07 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-25 13:53:07 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-25 13:53:08 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-06-25 13:53:08 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-06-25 13:53:08 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-06-25 13:53:08 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-25 13:53:08 +0800
+
+
+Started GET "/images/rails.png" for 127.0.0.1 at 2014-06-25 13:53:08 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/rails.png"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (20.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (66.7ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2014-06-25 13:53:10 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (14.0ms)
+Completed 500 Internal Server Error in 22ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    3: 
+    4: <div class="row">
+    5:   <div class="span6 offset3">
+    6:     <%= form_for(@user) do |f| %>
+    7:       <%= render 'shared/error_messages', object: f.object %>
+    8: 
+    9:       <%= f.label :email %>
+  app/views/sessions/new.html.erb:6:in `_app_views_sessions_new_html_erb__338395985_39665688'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.1ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2014-06-25 13:53:10 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    3: 
+    4: <div class="row">
+    5:   <div class="span6 offset3">
+    6:     <%= form_for(@user) do |f| %>
+    7:       <%= render 'shared/error_messages', object: f.object %>
+    8: 
+    9:       <%= f.label :email %>
+  app/views/sessions/new.html.erb:6:in `_app_views_sessions_new_html_erb__338395985_42660468'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (39.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-25 13:56:47 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered static_pages/home.html.erb within layouts/application (14.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 271ms (Views: 197.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-06-25 13:56:48 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-06-25 13:56:48 +0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-06-25 13:56:48 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-25 13:56:48 +0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-06-25 13:56:48 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-25 13:56:49 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-25 13:56:49 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-25 13:56:49 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-06-25 13:56:49 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-06-25 13:56:49 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-06-25 13:56:49 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-25 13:56:49 +0800
+
+
+Started GET "/images/rails.png" for 127.0.0.1 at 2014-06-25 13:56:49 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/rails.png"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (43.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (88.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-25 13:57:24 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered static_pages/home.html.erb within layouts/application (8.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 32ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-06-25 13:57:24 +0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-06-25 13:57:24 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-25 13:57:24 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-06-25 13:57:24 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-06-25 13:57:24 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-25 13:57:24 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-25 13:57:24 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-25 13:57:24 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-06-25 13:57:24 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-06-25 13:57:24 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-06-25 13:57:24 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-25 13:57:25 +0800
+
+
+Started GET "/images/rails.png" for 127.0.0.1 at 2014-06-25 13:57:25 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/rails.png"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (48.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-25 13:57:42 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered static_pages/home.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 31ms (Views: 30.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-06-25 13:57:42 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-06-25 13:57:43 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-06-25 13:57:43 +0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-06-25 13:57:43 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-25 13:57:43 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-25 13:57:43 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-25 13:57:43 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-25 13:57:43 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-06-25 13:57:43 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-06-25 13:57:43 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-06-25 13:57:43 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-25 13:57:43 +0800
+
+
+Started GET "/images/rails.png" for 127.0.0.1 at 2014-06-25 13:57:43 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/rails.png"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (47.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-25 14:13:18 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered static_pages/home.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 33ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-25 14:13:18 +0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-06-25 14:13:18 +0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-06-25 14:13:18 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-06-25 14:13:18 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-06-25 14:13:18 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-25 14:13:18 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-25 14:13:18 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-25 14:13:19 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-06-25 14:13:19 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-06-25 14:13:19 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-06-25 14:13:19 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-25 14:13:19 +0800
+
+
+Started GET "/images/rails.png" for 127.0.0.1 at 2014-06-25 14:13:19 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/rails.png"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (47.4ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-06-25 14:13:22 +0800
+Processing by UsersController#new as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered shared/_error_messages.html.erb (38.0ms)
+  Rendered users/new.html.erb within layouts/application (49.0ms)
+Completed 500 Internal Server Error in 61ms
+
+ActionView::Template::Error (undefined local variable or method `object' for #<#<Class:0x541cc50>:0x541c3b0>):
+    1: <% if object.errors.any? %>
+    2:   <div id="error_explanation">
+    3:     <div class="alert alert-error">
+    4:       The form contains <%= pluralize(object.errors.count, "error") %>.
+  app/views/shared/_error_messages.html.erb:1:in `_app_views_shared__error_messages_html_erb__698979914_44192028'
+  app/views/users/new.html.erb:7:in `block in _app_views_users_new_html_erb__586487152_44078976'
+  app/views/users/new.html.erb:6:in `_app_views_users_new_html_erb__586487152_44078976'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.3ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-06-25 14:13:22 +0800
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered shared/_error_messages.html.erb (8.0ms)
+  Rendered users/new.html.erb within layouts/application (11.0ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (undefined local variable or method `object' for #<#<Class:0x541cc50>:0x5436360>):
+    1: <% if object.errors.any? %>
+    2:   <div id="error_explanation">
+    3:     <div class="alert alert-error">
+    4:       The form contains <%= pluralize(object.errors.count, "error") %>.
+  app/views/shared/_error_messages.html.erb:1:in `_app_views_shared__error_messages_html_erb__698979914_44165388'
+  app/views/users/new.html.erb:7:in `block in _app_views_users_new_html_erb__586487152_44147880'
+  app/views/users/new.html.erb:6:in `_app_views_users_new_html_erb__586487152_44147880'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-06-25 14:13:22 +0800
+Processing by UsersController#new as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered shared/_error_messages.html.erb (6.0ms)
+  Rendered users/new.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined local variable or method `object' for #<#<Class:0x541cc50>:0x415bdb0>):
+    1: <% if object.errors.any? %>
+    2:   <div id="error_explanation">
+    3:     <div class="alert alert-error">
+    4:       The form contains <%= pluralize(object.errors.count, "error") %>.
+  app/views/shared/_error_messages.html.erb:1:in `_app_views_shared__error_messages_html_erb__698979914_44192028'
+  app/views/users/new.html.erb:7:in `block in _app_views_users_new_html_erb__586487152_44078976'
+  app/views/users/new.html.erb:6:in `_app_views_users_new_html_erb__586487152_44078976'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateRelationships (20140625075237)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "relationships" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "follower_id" integer, "followed_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mCREATE  INDEX "index_relationships_on_follower_id" ON "relationships" ("follower_id")[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_relationships_on_follower_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_relationships_on_follower_id' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1mCREATE  INDEX "index_relationships_on_followed_id" ON "relationships" ("followed_id")[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_relationships_on_followed_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_relationships_on_followed_id' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_relationships_on_follower_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_relationships_on_follower_id' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m  CREATE UNIQUE INDEX "index_relationships_on_follower_id_and_followed_id" ON "relationships" ("follower_id", "followed_id")
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140625075237"]]
+  [1m[35m (25.3ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_microposts_on_user_id_and_created_at' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_microposts_on_user_id_and_created_at' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_relationships_on_follower_id_and_followed_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_relationships_on_follower_id_and_followed_id' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_relationships_on_followed_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_relationships_on_followed_id' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_relationships_on_follower_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_relationships_on_follower_id' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_remember_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_remember_token' AND type='index'
+
+  [1m[36m (1.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[36m (216.5ms)[0m  [1mCREATE TABLE "microposts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "content" varchar(255), "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (20.5ms)[0m  [1mCREATE  INDEX "index_microposts_on_user_id_and_created_at" ON "microposts" ("user_id", "created_at")[0m
+  [1m[35m (21.0ms)[0m  CREATE TABLE "relationships" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "follower_id" integer, "followed_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (19.5ms)[0m  [1mCREATE  INDEX "index_relationships_on_followed_id" ON "relationships" ("followed_id")[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_relationships_on_followed_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_relationships_on_followed_id' AND type='index'
+
+  [1m[36m (19.7ms)[0m  [1mCREATE UNIQUE INDEX "index_relationships_on_follower_id_and_followed_id" ON "relationships" ("follower_id", "followed_id")[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_relationships_on_follower_id_and_followed_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_relationships_on_follower_id_and_followed_id' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_relationships_on_followed_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_relationships_on_followed_id' AND type='index'
+[0m
+  [1m[35m (21.8ms)[0m  CREATE  INDEX "index_relationships_on_follower_id" ON "relationships" ("follower_id")
+  [1m[36m (20.7ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime, "password_digest" varchar(255), "remember_token" varchar(255), "admin" boolean DEFAULT 'f') [0m
+  [1m[35m (70.8ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (24.1ms)[0m  CREATE  INDEX "index_users_on_remember_token" ON "users" ("remember_token")
+  [1m[36m (24.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (25.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (76.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140625075237')
+  [1m[36m (20.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140623022640')[0m
+  [1m[35m (19.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140623035448')
+  [1m[36m (20.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140623035845')[0m
+  [1m[35m (18.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140623091708')
+  [1m[36m (20.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140624141231')[0m
+  [1m[35m (27.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140625020427')
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (31.7ms)[0m  [1mCREATE TABLE "microposts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "content" varchar(255), "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (19.7ms)[0m  [1mCREATE  INDEX "index_microposts_on_user_id_and_created_at" ON "microposts" ("user_id", "created_at")[0m
+  [1m[35m (29.7ms)[0m  CREATE TABLE "relationships" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "follower_id" integer, "followed_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (19.8ms)[0m  [1mCREATE  INDEX "index_relationships_on_followed_id" ON "relationships" ("followed_id")[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_relationships_on_followed_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_relationships_on_followed_id' AND type='index'
+
+  [1m[36m (22.5ms)[0m  [1mCREATE UNIQUE INDEX "index_relationships_on_follower_id_and_followed_id" ON "relationships" ("follower_id", "followed_id")[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_relationships_on_follower_id_and_followed_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_relationships_on_follower_id_and_followed_id' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_relationships_on_followed_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_relationships_on_followed_id' AND type='index'
+[0m
+  [1m[35m (22.0ms)[0m  CREATE  INDEX "index_relationships_on_follower_id" ON "relationships" ("follower_id")
+  [1m[36m (21.0ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime, "password_digest" varchar(255), "remember_token" varchar(255), "admin" boolean DEFAULT 'f') [0m
+  [1m[35m (21.0ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (21.0ms)[0m  CREATE  INDEX "index_users_on_remember_token" ON "users" ("remember_token")
+  [1m[36m (20.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (25.3ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (18.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140625075237')
+  [1m[36m (28.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140623022640')[0m
+  [1m[35m (20.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140623035448')
+  [1m[36m (21.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140623035845')[0m
+  [1m[35m (117.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140623091708')
+  [1m[36m (24.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140624141231')[0m
+  [1m[35m (22.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140625020427')
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example@railstutorial.org') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-06-25 08:59:11.617881"], ["email", "example@railstutorial.org"], ["name", "Example User"], ["password_digest", "$2a$10$v4he/YfjPP9RpxQA9WpD5uNYpXvpkCwVKxM6FJRLfAixksiECW7AO"], ["remember_token", "872ca7ff6cb723f1b3ca84c0eb9e1b408188c9e0"], ["updated_at", "2014-06-25 08:59:11.617881"]]
+  [1m[36m (33.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mUPDATE "users" SET "admin" = ?, "updated_at" = ? WHERE "users"."id" = 1[0m  [["admin", "t"], ["updated_at", "2014-06-25 08:59:11.653919"]]
+  [1m[35m (23.1ms)[0m  commit transaction
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (1.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-1@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:12.312329"], ["email", "example-1@railstutorial.org"], ["name", "Norwood Weimann"], ["password_digest", "$2a$10$o5CBP4r9vx5XpRfA55smeOvqBcxGOYzZix8ZlfMbv6SSH7Tt6gRse"], ["remember_token", "141d72d80b617ffeda61ff9a662e0312d85dd948"], ["updated_at", "2014-06-25 08:59:12.312329"]]
+  [1m[35m (58.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-2@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:12.450952"], ["email", "example-2@railstutorial.org"], ["name", "Ruben Green"], ["password_digest", "$2a$10$AHsJx0YM5.2ERb87lAzXHuiyqPmMUQV22SxCYvdXAsK40LcVVUEHq"], ["remember_token", "2075d8b62fb89911214bc14ce9e177772aae8535"], ["updated_at", "2014-06-25 08:59:12.450952"]]
+  [1m[35m (31.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-3@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:12.563117"], ["email", "example-3@railstutorial.org"], ["name", "Amy Glover"], ["password_digest", "$2a$10$o2unu78/wISkJe6K1Nt.7uh7Gig56QqgQ4QAOXgfp5RYmBPeAHAoW"], ["remember_token", "8a116628840de3d3eef62d899ab5fd472519037e"], ["updated_at", "2014-06-25 08:59:12.563117"]]
+  [1m[35m (25.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (1.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-4@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:12.669957"], ["email", "example-4@railstutorial.org"], ["name", "Jason Hirthe"], ["password_digest", "$2a$10$8lLB4tzFWtimv5i0wkqPx.mSDVjsC11qCjhrPHPSZj3ePbEIkiX1y"], ["remember_token", "5755f19548260d4d6498ab9e8643e88ebbdab05e"], ["updated_at", "2014-06-25 08:59:12.669957"]]
+  [1m[35m (93.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (1.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-5@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:12.844370"], ["email", "example-5@railstutorial.org"], ["name", "Reece Prosacco III"], ["password_digest", "$2a$10$lN8IcMGoODqLrL4b8W0teOvC.AH.QxPjXESCPMvVNOsLPoD42Keb6"], ["remember_token", "a00fa466579292e99efba154f6f8d52d349b64a1"], ["updated_at", "2014-06-25 08:59:12.844370"]]
+  [1m[35m (37.7ms)[0m  commit transaction
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-6@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:12.962196"], ["email", "example-6@railstutorial.org"], ["name", "Minerva Wuckert"], ["password_digest", "$2a$10$t9P3.MZeieJg5INsPFQ6E.q5JW6En6L9zPdGgNQy/3LQlpIhE7MyG"], ["remember_token", "1fa909bbbd247fea18ae4bb32b38c75ba8be6f17"], ["updated_at", "2014-06-25 08:59:12.962196"]]
+  [1m[35m (65.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-7@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:13.107171"], ["email", "example-7@railstutorial.org"], ["name", "Wyatt Cummerata"], ["password_digest", "$2a$10$ZxV3bFCm5oi9IT8SVrnGTejZRLW5X6U6ZLyiXixU8YEFBVOO7XvtS"], ["remember_token", "63e001cce9d24f51fc0a86c61412dff131d7a86d"], ["updated_at", "2014-06-25 08:59:13.107171"]]
+  [1m[35m (42.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-8@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:13.231013"], ["email", "example-8@railstutorial.org"], ["name", "Jennie Pfeffer"], ["password_digest", "$2a$10$CpaFUi.h/Ud7OkVaBsLMCuYzUjD/5BCfoZOjVKD.pgb430E50D1AG"], ["remember_token", "4bd846bff575acb9e466158f3d2033e95dffae8b"], ["updated_at", "2014-06-25 08:59:13.231013"]]
+  [1m[35m (39.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (1.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-9@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:13.353094"], ["email", "example-9@railstutorial.org"], ["name", "Bridgette Kiehn"], ["password_digest", "$2a$10$sPCxtn3UMKHHgWP.o7USW.1KuNdyMkcyIRBdlyw5tNrx6wn7S9bya"], ["remember_token", "f06a780efb9a32a251e7e4177fa81cebf7ffbd37"], ["updated_at", "2014-06-25 08:59:13.353094"]]
+  [1m[35m (29.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-10@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:13.463630"], ["email", "example-10@railstutorial.org"], ["name", "Dr. Ethel Koss"], ["password_digest", "$2a$10$FbLos.SjwZ9iZOHuxmG.L.wgbHKrtxXmvt24GP/RMJGCTAAJN7aEW"], ["remember_token", "e2d5be55b46a8daab2cfac44a9b51ce41730a55f"], ["updated_at", "2014-06-25 08:59:13.463630"]]
+  [1m[35m (58.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-11@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:13.601480"], ["email", "example-11@railstutorial.org"], ["name", "Gabe O'Conner"], ["password_digest", "$2a$10$2yGPZJjNNzRzRgRzy7dDu.65BzRJOrT1w8wk6edfsYXRgAGNVNNUa"], ["remember_token", "1331f83c824a23fb0f91695dd290e3acc954390e"], ["updated_at", "2014-06-25 08:59:13.601480"]]
+  [1m[35m (32.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-12@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:13.714937"], ["email", "example-12@railstutorial.org"], ["name", "Nadia Casper"], ["password_digest", "$2a$10$ySepBn8w42jdLWxDIQzXNue7trofHrWAucWB.SX4d3ZBrdErV9YEi"], ["remember_token", "d407b2ed99ce53c39161afc7b857780588d1a6b8"], ["updated_at", "2014-06-25 08:59:13.714937"]]
+  [1m[35m (30.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (1.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-13@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:13.824685"], ["email", "example-13@railstutorial.org"], ["name", "Dangelo Durgan Sr."], ["password_digest", "$2a$10$LaRH3IpzsgRAfzvKqghaju8K2bnoaHgN8DU/ojeAOvXjNiAkdqHmG"], ["remember_token", "5734f977e09fd4811c23c96054d8ca93727642cb"], ["updated_at", "2014-06-25 08:59:13.824685"]]
+  [1m[35m (43.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-14@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:13.949205"], ["email", "example-14@railstutorial.org"], ["name", "Nelson Osinski"], ["password_digest", "$2a$10$NOoi67F0a.BZ67K0ijyBVuyohn7PFFKFYGD9iUT6ChsEPPqRho98u"], ["remember_token", "131799375e2a456346a6245b0732743346307858"], ["updated_at", "2014-06-25 08:59:13.949205"]]
+  [1m[35m (67.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-15@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:14.097948"], ["email", "example-15@railstutorial.org"], ["name", "Margaret Funk"], ["password_digest", "$2a$10$QlC2nTXuTfWl4Pugl7m2peDF97zalNUZFSw7Htt5ZG45X/oER3jja"], ["remember_token", "e17772b9d80aa61858251e63db9fde11d39786fc"], ["updated_at", "2014-06-25 08:59:14.097948"]]
+  [1m[35m (74.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-16@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:14.252191"], ["email", "example-16@railstutorial.org"], ["name", "Miss Lamar Kreiger"], ["password_digest", "$2a$10$lvvwNxdJVYqmMjyELQfNDu20PNHDno0Jz53Bij9WDHoXr9ivfBuoO"], ["remember_token", "6e29345e2962bb7eb79d98b9b1aa77e605e1989c"], ["updated_at", "2014-06-25 08:59:14.252191"]]
+  [1m[35m (33.3ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-17@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:14.365605"], ["email", "example-17@railstutorial.org"], ["name", "Henri Funk MD"], ["password_digest", "$2a$10$QqtE5Rcsif9MP.WyLLdziujiT3u2sCW58FAV3nSVCnELJMsS7Dcd6"], ["remember_token", "a14812e19853ff0164e34711de8955318df38dea"], ["updated_at", "2014-06-25 08:59:14.365605"]]
+  [1m[35m (49.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (1.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-18@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:14.495288"], ["email", "example-18@railstutorial.org"], ["name", "Raphaelle Kulas PhD"], ["password_digest", "$2a$10$yMgfJJLWkCaPtHgsBaiIN.SZWnd9vGVqr79dY9M2BUMATv2iker5y"], ["remember_token", "729d2ba339e705c7a5abaad1433069171f6b1d5b"], ["updated_at", "2014-06-25 08:59:14.495288"]]
+  [1m[35m (40.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-19@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:14.617545"], ["email", "example-19@railstutorial.org"], ["name", "Joe Yost"], ["password_digest", "$2a$10$GeG4IJxNapvi3sDJDllDsuoVkYfzW9.A25gnhdL7vhbaxffPDrSyW"], ["remember_token", "768c811113c9d0909b4de8da5e2c798c592d7a5e"], ["updated_at", "2014-06-25 08:59:14.617545"]]
+  [1m[35m (39.3ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-20@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:14.736920"], ["email", "example-20@railstutorial.org"], ["name", "Aniya Welch"], ["password_digest", "$2a$10$sxZlKQDzucjeo9R/GjM1aei4RpnPyxcF38ZFnEJ7cEyFHImYtTI0."], ["remember_token", "e40dd7faeb5b994895738d31be201741731b52c7"], ["updated_at", "2014-06-25 08:59:14.736920"]]
+  [1m[35m (39.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-21@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:14.855952"], ["email", "example-21@railstutorial.org"], ["name", "Miss Izaiah Becker"], ["password_digest", "$2a$10$Xl.mKXNmvXQCqRXm/gAMYue8dl7NhCuNB1sJIrM8PGL/RbaR6LGNC"], ["remember_token", "72e445c10ff96f96be6c84d95beff074745b9755"], ["updated_at", "2014-06-25 08:59:14.855952"]]
+  [1m[35m (56.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-22@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:14.994212"], ["email", "example-22@railstutorial.org"], ["name", "Miss Stephania Ondricka"], ["password_digest", "$2a$10$qZt3erjcRLLYTCFRXFrw8Oku93IMlFkMmnLwfhHin7jd5g7LCxyfe"], ["remember_token", "4711e101682ed5bcc2a69dc8ecf48a35d03b8d31"], ["updated_at", "2014-06-25 08:59:14.994212"]]
+  [1m[35m (59.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (1.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-23@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:15.135181"], ["email", "example-23@railstutorial.org"], ["name", "Wallace Kub V"], ["password_digest", "$2a$10$O7FQxV0.cTrCfexLrYceX.e/R94oK9zx5rluVkFT1VcBQhmYLM9bq"], ["remember_token", "622de8856316bf01b393c58aac0e7992542ed869"], ["updated_at", "2014-06-25 08:59:15.135181"]]
+  [1m[35m (91.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-24@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:15.324801"], ["email", "example-24@railstutorial.org"], ["name", "Ms. Madelyn Kshlerin"], ["password_digest", "$2a$10$.QxrGBW0QBWzn9OMjnM7yu2NTL/k.bXBQ0I94j1R/6VT1UnhbJtbK"], ["remember_token", "203464dfd3b970c4b2187892ddc7fa2d6ffde944"], ["updated_at", "2014-06-25 08:59:15.324801"]]
+  [1m[35m (47.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-25@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:15.453610"], ["email", "example-25@railstutorial.org"], ["name", "Columbus Spencer IV"], ["password_digest", "$2a$10$J84SZJ0kKBQF7CcFHnt.tOD6CWZXK4aCby00GrCQDfPqNsev83DOi"], ["remember_token", "4639f5a874f227c6fb2adcf3b37ae8953f38696f"], ["updated_at", "2014-06-25 08:59:15.453610"]]
+  [1m[35m (93.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-26@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:15.627655"], ["email", "example-26@railstutorial.org"], ["name", "Freda Haag"], ["password_digest", "$2a$10$TsoSAq0TZqx/6w6I0vNbpuq4HAEZ2Wck5FIqlljCfZCvSLKnKL6lS"], ["remember_token", "9843ae2b0e4872a36c05aaf84a4d52c2e37e0f04"], ["updated_at", "2014-06-25 08:59:15.627655"]]
+  [1m[35m (39.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (1.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-27@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:15.748184"], ["email", "example-27@railstutorial.org"], ["name", "Jay Murphy"], ["password_digest", "$2a$10$FQghHBj4SDxq5VzwZz.UH.Weu2O.BjbEX9w2Ik9c6akWnCWanbWoW"], ["remember_token", "43bad5a1643607f59ca10768b9acfc9347808d11"], ["updated_at", "2014-06-25 08:59:15.748184"]]
+  [1m[35m (36.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (1.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-28@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:15.865299"], ["email", "example-28@railstutorial.org"], ["name", "Johnpaul Swift"], ["password_digest", "$2a$10$gZuZiw3lEcP7/EtFbQMbDeVKmPdlxaGXO8K4ndvHrZA1OT3noK/Aq"], ["remember_token", "3b4702e6e665d3dee888d5c76c88bca9bc2fffdd"], ["updated_at", "2014-06-25 08:59:15.865299"]]
+  [1m[35m (60.7ms)[0m  commit transaction
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (1.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-29@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:16.006032"], ["email", "example-29@railstutorial.org"], ["name", "Dr. Mckenna Schmitt"], ["password_digest", "$2a$10$USaKzcA0errpZKT3R5/s3eUZOTtpNqrTNWRsTNXLA6DIuM/CB8OJe"], ["remember_token", "797555d01546d81d12804af6d17661d45da427eb"], ["updated_at", "2014-06-25 08:59:16.006032"]]
+  [1m[35m (45.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-30@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:16.135866"], ["email", "example-30@railstutorial.org"], ["name", "Dr. Melba Orn"], ["password_digest", "$2a$10$lOjEjVjUGP/Or4d8vG43QuJiDGeubZM5gYHJ3VFVaAGwE4K72Bm7q"], ["remember_token", "d1410e24f78c456f913d2648cbbf94824efb4ddf"], ["updated_at", "2014-06-25 08:59:16.135866"]]
+  [1m[35m (70.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-31@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:16.287894"], ["email", "example-31@railstutorial.org"], ["name", "Jaren Adams"], ["password_digest", "$2a$10$tJml51oIgmGHjIsj3g4UwOKDDQE2g3TjFu6EJZ8VturPmsAicj/sG"], ["remember_token", "937ba5afcff06ffa48ecf615b6cb2aa66b47ab9f"], ["updated_at", "2014-06-25 08:59:16.287894"]]
+  [1m[35m (51.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-32@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:16.420648"], ["email", "example-32@railstutorial.org"], ["name", "Sarah Brekke"], ["password_digest", "$2a$10$5ShlANZ0WY.0peqdU5xkG.3Afzv6sQuDBEbK4RYpEz5FKZ6NQjcmK"], ["remember_token", "9171a1f8f7b66c355715d58fc3e4cd0be8d48920"], ["updated_at", "2014-06-25 08:59:16.420648"]]
+  [1m[35m (66.3ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-33@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:16.567988"], ["email", "example-33@railstutorial.org"], ["name", "Dahlia Bayer"], ["password_digest", "$2a$10$LsA3A1DlMdFAt3rvdybTjeW6NWKOE3nW8izWcd.LBxA1jR0tfEjuC"], ["remember_token", "7a0fc283dadbdd728c97c888835d1f3f6cae0b3d"], ["updated_at", "2014-06-25 08:59:16.567988"]]
+  [1m[35m (63.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-34@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:16.711806"], ["email", "example-34@railstutorial.org"], ["name", "Hertha McGlynn"], ["password_digest", "$2a$10$G1iq76p5P3w8heNrikErlu9qsDtl/FLEKStjM6ivdu8sLyoDUTqhm"], ["remember_token", "5a73ff833bcce8d1bb988e248d9ca2325a3b4dfc"], ["updated_at", "2014-06-25 08:59:16.711806"]]
+  [1m[35m (25.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (1.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-35@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:16.819543"], ["email", "example-35@railstutorial.org"], ["name", "Berniece Donnelly"], ["password_digest", "$2a$10$YNx/wvpHkCz/UK8cQFZ/p.stjApFRTgNLvKk/nOFmkDY1kRqozhl."], ["remember_token", "572c14a4b362f26ddacbb92ebc34c868e564f7fc"], ["updated_at", "2014-06-25 08:59:16.819543"]]
+  [1m[35m (27.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (1.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-36@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:16.929613"], ["email", "example-36@railstutorial.org"], ["name", "Dr. Graciela Koss"], ["password_digest", "$2a$10$Rg9lDXLKVdQvhxM3D48N2OaIc8jfZYH5Bc9DuLHpkO8XZt5t87ttG"], ["remember_token", "af2ff6ca997dd01cecf61f946bffa66e8326f75a"], ["updated_at", "2014-06-25 08:59:16.929613"]]
+  [1m[35m (99.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-37@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:17.110462"], ["email", "example-37@railstutorial.org"], ["name", "Darwin Keeling MD"], ["password_digest", "$2a$10$/hY5bJ0mca9uAyFKi2aR6e4QRjtNpFLQm5OkrhJAD6AI0/wDzRDzC"], ["remember_token", "6a403e6b0d0b426ba380296c14b9783c42715220"], ["updated_at", "2014-06-25 08:59:17.110462"]]
+  [1m[35m (44.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-38@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:17.235060"], ["email", "example-38@railstutorial.org"], ["name", "Erick Cummings"], ["password_digest", "$2a$10$Epbbnnuf4/JXSC73N4ge0OAq2F4vMIx7Ln9PgVCugoAZOyem3KBwW"], ["remember_token", "7d32673a944e9c8dcfa6d22550caad95a862bbda"], ["updated_at", "2014-06-25 08:59:17.235060"]]
+  [1m[35m (48.1ms)[0m  commit transaction
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (1.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-39@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:17.364889"], ["email", "example-39@railstutorial.org"], ["name", "Krystel Stanton"], ["password_digest", "$2a$10$mBWbBxyLVY031CA2mYei3.usf37VYvzTXiwMOMq4JJJ309kZ21KuC"], ["remember_token", "bf572e09db0e7a8a7d911aca218e84d3734802e0"], ["updated_at", "2014-06-25 08:59:17.364889"]]
+  [1m[35m (63.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-40@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:17.511987"], ["email", "example-40@railstutorial.org"], ["name", "Norma Kunde"], ["password_digest", "$2a$10$VHoGPw.QlGefzo5HrQL93O4l/Nrc3vpgWyNGOgpIy/J48GI0Q2R7e"], ["remember_token", "a03030b1405747ffcd2eb8d17d1be30c9e02ddd4"], ["updated_at", "2014-06-25 08:59:17.511987"]]
+  [1m[35m (42.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (1.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-41@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:17.637069"], ["email", "example-41@railstutorial.org"], ["name", "Destiny Turcotte"], ["password_digest", "$2a$10$HsjuIOdAspO9.FEVQHxfvuMJ9vTiEaCH83vnyS9oMR09AuaRUOs8C"], ["remember_token", "80e94b7e51974fdd80eb7da1ffb36dfcced5fc31"], ["updated_at", "2014-06-25 08:59:17.637069"]]
+  [1m[35m (34.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-42@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:17.753145"], ["email", "example-42@railstutorial.org"], ["name", "Santina Tremblay V"], ["password_digest", "$2a$10$lRhs6YcLA4aqd9AllTlj.u0QbTLJshmLLSfJjtefqGkJAdQUENzMO"], ["remember_token", "cbdbdc49f16ed6f7a3eb51956ca3d8635de68597"], ["updated_at", "2014-06-25 08:59:17.753145"]]
+  [1m[35m (47.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-43@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:17.883298"], ["email", "example-43@railstutorial.org"], ["name", "Oda Kutch II"], ["password_digest", "$2a$10$P.OiE36wCJ6NSDTWxNsFTuvGwjaMmp/mK0Z98rkNcLRNdYiQ11jUK"], ["remember_token", "0370a6c4c08789b39dacf9f878cd8fbcd08132d2"], ["updated_at", "2014-06-25 08:59:17.883298"]]
+  [1m[35m (39.6ms)[0m  commit transaction
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (1.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-44@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:18.004929"], ["email", "example-44@railstutorial.org"], ["name", "Kavon Hoeger"], ["password_digest", "$2a$10$chnfAavWYMRNKtdtx8DR3.d2CdKLU3QkA/pHGlo/2okmJUDdL89Di"], ["remember_token", "6e9be6f62c97c454217801922623ab606d01b985"], ["updated_at", "2014-06-25 08:59:18.004929"]]
+  [1m[35m (109.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-45@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:18.193894"], ["email", "example-45@railstutorial.org"], ["name", "Alana Windler"], ["password_digest", "$2a$10$Z1v5Pq96jual5jWOXnQ76.VPWYdBN/VkojvLLX5Fl3mylpWk.e6aq"], ["remember_token", "86632c4e8bd22c25bfe59b108f92817144638d95"], ["updated_at", "2014-06-25 08:59:18.193894"]]
+  [1m[35m (43.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-46@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:18.319686"], ["email", "example-46@railstutorial.org"], ["name", "Elvie Gleason"], ["password_digest", "$2a$10$dra.3L99GWSSp5q8HdvqOu9Z7k262hnIU0DBtbCCHHayxj0kICmMC"], ["remember_token", "66de28f75c49b79384906123c87c50b87f458ac9"], ["updated_at", "2014-06-25 08:59:18.319686"]]
+  [1m[35m (55.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-47@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:18.456359"], ["email", "example-47@railstutorial.org"], ["name", "Lionel Davis"], ["password_digest", "$2a$10$yKf7Xd9l/S/gSSfEEprIVeOeY84mIBXy15YFsMkIXAvctcyB6n.Iq"], ["remember_token", "5152a5d60e85a51931ab67b33f8fe13f7fdcf8e7"], ["updated_at", "2014-06-25 08:59:18.456359"]]
+  [1m[35m (83.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (1.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-48@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:18.620463"], ["email", "example-48@railstutorial.org"], ["name", "Ms. Matt Stokes"], ["password_digest", "$2a$10$Q4Wo.OgomVwaFsGxafZqpum/A7HUbN/MCcNxBppdeIJN1INrk4bFa"], ["remember_token", "22a5746984417b618c7a5f5abae60c0395e5e1e6"], ["updated_at", "2014-06-25 08:59:18.620463"]]
+  [1m[35m (37.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-49@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:18.737540"], ["email", "example-49@railstutorial.org"], ["name", "Elmira Little"], ["password_digest", "$2a$10$hllpqnIJ17AnhczsewTzuepYrShfv/UsJ6N.eGfOymnXtUvJQ.z2q"], ["remember_token", "038cedcf08cac68a347d520f4a0fd91dce58716c"], ["updated_at", "2014-06-25 08:59:18.737540"]]
+  [1m[35m (44.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-50@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:18.862533"], ["email", "example-50@railstutorial.org"], ["name", "Brittany Will"], ["password_digest", "$2a$10$7mXWUaNv8U7nCxHrFxM0XOLx1RJmY6j/oJMQjkrncLevB/CgR.VkG"], ["remember_token", "add213965779b909c15ba536d4a2e2f4421b980b"], ["updated_at", "2014-06-25 08:59:18.862533"]]
+  [1m[35m (45.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-51@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:18.987950"], ["email", "example-51@railstutorial.org"], ["name", "Merlin Hilpert III"], ["password_digest", "$2a$10$p5wM4nJGZsot5Vd7V1yr6OoeRKgEjQiDMtvg7Oz1t5tCGfMNqspQW"], ["remember_token", "d702395081c5816ccae8a06c4a16534c6f1cfbb1"], ["updated_at", "2014-06-25 08:59:18.987950"]]
+  [1m[35m (51.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-52@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:19.120145"], ["email", "example-52@railstutorial.org"], ["name", "Rhianna Mante II"], ["password_digest", "$2a$10$3f7RBnOKcfcNECCJWDy2quSgJS2TcwBbDs/EyxE3zN5n2YbeelIDi"], ["remember_token", "041e321597a78588b02aaabb2bab99614ead4b61"], ["updated_at", "2014-06-25 08:59:19.120145"]]
+  [1m[35m (50.3ms)[0m  commit transaction
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (1.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-53@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:19.252516"], ["email", "example-53@railstutorial.org"], ["name", "Shaniya Tremblay PhD"], ["password_digest", "$2a$10$23l6wL/2aa4sBaifZ.dkjO2S2tA.dLv5HB8ahpORIo1/PdJd3XGHq"], ["remember_token", "2cbb1eacdd148045bb5ed3a051027f84ed452898"], ["updated_at", "2014-06-25 08:59:19.252516"]]
+  [1m[35m (25.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (1.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-54@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:19.359340"], ["email", "example-54@railstutorial.org"], ["name", "Jaiden Zieme Sr."], ["password_digest", "$2a$10$BfMp5953DaoqaiKKTtvaFuj7G4tSyFvKJEgYs0liClmWpmNSFFMkC"], ["remember_token", "de632bec26d1153116b58cb9df54cb6be9feb547"], ["updated_at", "2014-06-25 08:59:19.359340"]]
+  [1m[35m (23.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-55@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:19.464410"], ["email", "example-55@railstutorial.org"], ["name", "Dana Kozey"], ["password_digest", "$2a$10$YsWzJ/NEn8iUx9JP6bkL2elxKv1u5tIDk50VyCcpYclQ50816w6H."], ["remember_token", "aeee10fe676b14faed78ae58f8ce8bd93a507b7c"], ["updated_at", "2014-06-25 08:59:19.464410"]]
+  [1m[35m (41.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-56@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:19.587492"], ["email", "example-56@railstutorial.org"], ["name", "Susanna Beier"], ["password_digest", "$2a$10$VK2yUB..XOuvIhqPn0Hvd.zr5y/GkJ/sSv3bj5/eMyRD4WKrpP0k."], ["remember_token", "efe1526bdc73ff97026cca96458b04f17fe16cc3"], ["updated_at", "2014-06-25 08:59:19.587492"]]
+  [1m[35m (33.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-57@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:19.701640"], ["email", "example-57@railstutorial.org"], ["name", "Sister Altenwerth"], ["password_digest", "$2a$10$/OXfFAIfDcLgLugaYSO4yeSZFlI4EauA9TqQyePONt3TNeADdVV7."], ["remember_token", "62855a024788cfe2d0d0e1ae370ff126ec3e979f"], ["updated_at", "2014-06-25 08:59:19.701640"]]
+  [1m[35m (28.0ms)[0m  commit transaction
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-58@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:19.809744"], ["email", "example-58@railstutorial.org"], ["name", "Zetta Nolan"], ["password_digest", "$2a$10$4yV.AOrzhQcqhXGPyhspWOH/MX2ccWXk5JQpTK5fK8EH1GPsB8V92"], ["remember_token", "dd52d5048f0f3f1636347e5adf3c5bdae727a090"], ["updated_at", "2014-06-25 08:59:19.809744"]]
+  [1m[35m (42.0ms)[0m  commit transaction
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-59@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:19.930782"], ["email", "example-59@railstutorial.org"], ["name", "Annalise McLaughlin"], ["password_digest", "$2a$10$/KJ1mOrgIMA/2HBqdIKe5OIlhPHvCv1uFY17xW5VSpiqTWqWfo/Cy"], ["remember_token", "b815456ad0638e70d7f011ad1ef8ea20b4b2ef9f"], ["updated_at", "2014-06-25 08:59:19.930782"]]
+  [1m[35m (41.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-60@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:20.052925"], ["email", "example-60@railstutorial.org"], ["name", "Leonie Jewess"], ["password_digest", "$2a$10$d/vmpO4D29W3mPNvlgBZKeio55G5ycXQwNG3hbMjOtktsZlVxOBu2"], ["remember_token", "1f7e2cabf011a0811d48968b85a877266049f8f0"], ["updated_at", "2014-06-25 08:59:20.052925"]]
+  [1m[35m (26.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (1.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-61@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:20.159998"], ["email", "example-61@railstutorial.org"], ["name", "Modesta Bogan"], ["password_digest", "$2a$10$8Rtg3tPrgnfHaWlUdtvt..3V2j/hoH47yfjFjM6t/8AumZqAYMs0C"], ["remember_token", "470e84f4d0ab49ef751ffffcca71ec0d71b9fe57"], ["updated_at", "2014-06-25 08:59:20.159998"]]
+  [1m[35m (23.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-62@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:20.262116"], ["email", "example-62@railstutorial.org"], ["name", "Cletus Christiansen"], ["password_digest", "$2a$10$ILcTE1DRx5REv6jXCBIpDO.IinraRknTuKCiz3nS8DK.49F5RZPMi"], ["remember_token", "0135dd4d49f8405f68742040be05689474889925"], ["updated_at", "2014-06-25 08:59:20.262116"]]
+  [1m[35m (27.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-63@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:20.369210"], ["email", "example-63@railstutorial.org"], ["name", "Veronica Yundt"], ["password_digest", "$2a$10$eCsQSNt7GhLiGQ4BYMNmLu4VAp576OcOx54pB.8YjiXdMgeSO/ai6"], ["remember_token", "968aa79c752ba0ab02ee16c36c7b73ceb50c2467"], ["updated_at", "2014-06-25 08:59:20.369210"]]
+  [1m[35m (23.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-64@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:20.474188"], ["email", "example-64@railstutorial.org"], ["name", "Virgie Hintz"], ["password_digest", "$2a$10$t6mF2XpquACBhsI1t6h//.DMo.79SuiatCEVBWbVeBHKDm7ND6KMS"], ["remember_token", "459845d0e26d336a8e2cec63e3094071c5d052ce"], ["updated_at", "2014-06-25 08:59:20.474188"]]
+  [1m[35m (35.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-65@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:20.589236"], ["email", "example-65@railstutorial.org"], ["name", "Erika Simonis Jr."], ["password_digest", "$2a$10$WwsjsR6e4w78iQcoBrRoB./zSIguDFm/ty4IcYWXB21pX07bo61qO"], ["remember_token", "7a867981d0afbce1b5f56107efca6b225208f94b"], ["updated_at", "2014-06-25 08:59:20.589236"]]
+  [1m[35m (42.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (1.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-66@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:20.712320"], ["email", "example-66@railstutorial.org"], ["name", "Tyrese Flatley"], ["password_digest", "$2a$10$SY6Gg2o/ijNbf7vG/evgQucMID8geYjf3hrhvJJ4TTSC4Osa8CkOO"], ["remember_token", "892877e0db00d32aa24b735c27ece96732c35961"], ["updated_at", "2014-06-25 08:59:20.712320"]]
+  [1m[35m (30.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-67@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:20.823251"], ["email", "example-67@railstutorial.org"], ["name", "Evelyn Adams"], ["password_digest", "$2a$10$5d7rWZm.s9EXYqxuGzsgleDAHw1WkCyo2MXwxrJLyz5iw8.uJz9R."], ["remember_token", "2039a599243b95aca3300ad7ddf8f9affb9e4ad7"], ["updated_at", "2014-06-25 08:59:20.823251"]]
+  [1m[35m (24.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-68@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:20.926517"], ["email", "example-68@railstutorial.org"], ["name", "Adolfo Wolff"], ["password_digest", "$2a$10$LG/0GRRxYvtwiqkY38L1gOxrp9dDxPRUidGuo3YTAj2JypVkVA8l6"], ["remember_token", "60fcbe5bf764a0698f2aa75161cf944d5d131148"], ["updated_at", "2014-06-25 08:59:20.926517"]]
+  [1m[35m (28.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (1.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-69@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:21.034567"], ["email", "example-69@railstutorial.org"], ["name", "Amira Keeling"], ["password_digest", "$2a$10$9u6SG/cO/siEpYFnYTZAK.YBxgtyROcbSxrDGPP84PENXfl1a3vMW"], ["remember_token", "635989736b75b7dc9641a723408cb4e58ffd05dc"], ["updated_at", "2014-06-25 08:59:21.034567"]]
+  [1m[35m (26.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-70@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:21.141801"], ["email", "example-70@railstutorial.org"], ["name", "Kenton Konopelski I"], ["password_digest", "$2a$10$0IiCNIHtuVC0uh9GGMt82upSbmLrzzoMzJ4W4SIakx.X8CbH7ilB."], ["remember_token", "01f5c2b26bca37ac6753a3d2416c2f20a55a3e8c"], ["updated_at", "2014-06-25 08:59:21.141801"]]
+  [1m[35m (24.3ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (1.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-71@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:21.248198"], ["email", "example-71@railstutorial.org"], ["name", "Lolita Leuschke"], ["password_digest", "$2a$10$aiWIYyQbdTgNzN5f4zGDZeImKz77bRnemqrjZ7UD3kfC.fHo1Rmqa"], ["remember_token", "476e10496d1b24e0ed4d5baecf75682fb2f1ec4f"], ["updated_at", "2014-06-25 08:59:21.248198"]]
+  [1m[35m (26.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-72@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:21.357919"], ["email", "example-72@railstutorial.org"], ["name", "Ms. Merlin Carter"], ["password_digest", "$2a$10$TRYf6Ui0EDDV0.fqvPTP7.IkcJxfq8jX/eXYr6dsaq.vTGMiG.P0q"], ["remember_token", "c966b640de1705e7ed38275d37e541ab10ba5836"], ["updated_at", "2014-06-25 08:59:21.357919"]]
+  [1m[35m (34.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-73@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:21.472996"], ["email", "example-73@railstutorial.org"], ["name", "Nat Volkman"], ["password_digest", "$2a$10$Gvddgc449aOwANzO/o7As.E/NLbke.KfUCputG0vqWQTFep/S.IBi"], ["remember_token", "6fc031ce547a7accceea6e9b2a0dc2d4cbdd6430"], ["updated_at", "2014-06-25 08:59:21.472996"]]
+  [1m[35m (23.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-74@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:21.576533"], ["email", "example-74@railstutorial.org"], ["name", "Raven Stark"], ["password_digest", "$2a$10$DFsFWEXO/Enj2raqNBVHWel5UW57LYmy2eWkH16a6.4iRxq5b1zSy"], ["remember_token", "3e14730dad54461e2e22410426b367fc1f3b536c"], ["updated_at", "2014-06-25 08:59:21.576533"]]
+  [1m[35m (26.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-75@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:21.683010"], ["email", "example-75@railstutorial.org"], ["name", "Gregorio Grant MD"], ["password_digest", "$2a$10$kqdyi3IDm7lN0pDGnpIhzun.stnw/mTPjcmgWUCcIRB1kkif3wSgm"], ["remember_token", "6f57209285811e2e9d47c5807f8ae408bc17b1e1"], ["updated_at", "2014-06-25 08:59:21.683010"]]
+  [1m[35m (85.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-76@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:21.874676"], ["email", "example-76@railstutorial.org"], ["name", "Judy Heidenreich"], ["password_digest", "$2a$10$x/2uhk7zcaB0WRfamdx4TuCPuGe4pEhxQ12EmRKGFcvbO53JAZhdO"], ["remember_token", "ed0f8f7f1d2b48f22d689cb7784bc84b228fed8c"], ["updated_at", "2014-06-25 08:59:21.874676"]]
+  [1m[35m (26.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-77@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:21.981153"], ["email", "example-77@railstutorial.org"], ["name", "Foster Huel Sr."], ["password_digest", "$2a$10$DtZUIQd/YJopkcNglbK1deU9CqldtsKw33oHShE0NMuAxkpecsQYa"], ["remember_token", "599cef1e172ed57c970a3491fa403ad9a4a207c2"], ["updated_at", "2014-06-25 08:59:21.981153"]]
+  [1m[35m (21.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-78@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:22.082615"], ["email", "example-78@railstutorial.org"], ["name", "Fritz Swift"], ["password_digest", "$2a$10$CL7EAAbaLmAIgSHxVQpRTOvu8nN9Lgl38Ro0SH6dB6ij0RpfTT46K"], ["remember_token", "53b67ee854576fb9bfb23b9f85cfb88b196605ca"], ["updated_at", "2014-06-25 08:59:22.082615"]]
+  [1m[35m (24.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-79@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:22.188467"], ["email", "example-79@railstutorial.org"], ["name", "Edmund Frami"], ["password_digest", "$2a$10$veg5TZJ1gXlxn26FDMF0uuGbuoCAsUE5jSlZFvZrX/d4HYIcE7.bS"], ["remember_token", "c2d544b188005699a173db3a94801944dab0e5ec"], ["updated_at", "2014-06-25 08:59:22.188467"]]
+  [1m[35m (23.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (1.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-80@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:22.293160"], ["email", "example-80@railstutorial.org"], ["name", "Dr. Nicole Kozey"], ["password_digest", "$2a$10$5oHydQs7gfJmhE8GUGbuCub3RmHzORX7cWpNtH3ZwS9BCOv2qr4je"], ["remember_token", "a808f6dc6771d8b8f6f699d1746faae5da5dd0ff"], ["updated_at", "2014-06-25 08:59:22.293160"]]
+  [1m[35m (26.0ms)[0m  commit transaction
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-81@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:22.400235"], ["email", "example-81@railstutorial.org"], ["name", "Miss Armani Wiegand"], ["password_digest", "$2a$10$uZMymnk4K2EoPsbtmdIoxe64H0Kd3jzibQBVvG1hFIUOqRk8YeT8G"], ["remember_token", "21d06e40593e9fa2723e530258d9bd482929ef88"], ["updated_at", "2014-06-25 08:59:22.400235"]]
+  [1m[35m (25.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (1.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-82@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:22.505683"], ["email", "example-82@railstutorial.org"], ["name", "Mr. Collin DuBuque"], ["password_digest", "$2a$10$2n5VWa6GxWYJdX4mrOJZWOHBCdyXAD.KTuLPksSqFR45cgkvG5y/y"], ["remember_token", "68b1ee1e46d4c81a84b1cb41b7a2a01325e70d89"], ["updated_at", "2014-06-25 08:59:22.505683"]]
+  [1m[35m (61.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (1.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-83@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:22.648661"], ["email", "example-83@railstutorial.org"], ["name", "Priscilla Keeling"], ["password_digest", "$2a$10$2OBeKLEaAJq0nyUL/XEHVOZ03nawF7iW4ZWYVdGKlJpRiHst77AFu"], ["remember_token", "3538202f88b600a7505e295bb7ab84d8a98dec89"], ["updated_at", "2014-06-25 08:59:22.648661"]]
+  [1m[35m (49.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (1.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-84@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:22.779790"], ["email", "example-84@railstutorial.org"], ["name", "Salvatore Kihn"], ["password_digest", "$2a$10$.D4Ub1nxWk/l.2QmlDZmCeNZsUDwrCrGDGUXqD9JPrP21NE7tOH52"], ["remember_token", "34f8b5ab88634d4d19ab89549dda489aa57cfe8f"], ["updated_at", "2014-06-25 08:59:22.779790"]]
+  [1m[35m (44.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-85@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:22.905673"], ["email", "example-85@railstutorial.org"], ["name", "Mrs. Clark Blick"], ["password_digest", "$2a$10$pQ2si4i0fUU2nHt4omzB7enagJjX7WPT4LdtWbjKKHsun1YYXYaCS"], ["remember_token", "877bca75f3ad671ab94c8b5a4ea5bf1bdc709ed8"], ["updated_at", "2014-06-25 08:59:22.905673"]]
+  [1m[35m (52.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-86@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:23.038218"], ["email", "example-86@railstutorial.org"], ["name", "Nolan Green"], ["password_digest", "$2a$10$qxTI0yUU1Ne7wGaJOPN81eNoVxBeYfCp7O7Be2kDMh93v4s3y.c2e"], ["remember_token", "c2b4bfa0b499a0be5f5e4dd1d3f1d0e3a3672514"], ["updated_at", "2014-06-25 08:59:23.038218"]]
+  [1m[35m (61.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-87@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:23.179816"], ["email", "example-87@railstutorial.org"], ["name", "Chet Gusikowski"], ["password_digest", "$2a$10$Q3GLmM7yCJLOw7rmXDbaHeCTX5YV88Pbr1x4DYJNxkRWmfrmp7SSu"], ["remember_token", "1d0b5ec1ebd1463cad85664b9852c11a3bdcc8fe"], ["updated_at", "2014-06-25 08:59:23.179816"]]
+  [1m[35m (122.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (1.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-88@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:23.382363"], ["email", "example-88@railstutorial.org"], ["name", "Shane Koss"], ["password_digest", "$2a$10$mRd.ukaZkzJMczXTLbRYWeqYoNHVVz7dXPvn7mPqebAIr1DsyLUkW"], ["remember_token", "a8b7d3f93fcf7a3b8a43b523b385c33a18e58a09"], ["updated_at", "2014-06-25 08:59:23.382363"]]
+  [1m[35m (39.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-89@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:23.502904"], ["email", "example-89@railstutorial.org"], ["name", "Alene Klein"], ["password_digest", "$2a$10$fgYtYw/2APpbKCf53NDGE.qEFH30I/qsK9/4tj7fPikLEKjc3xB8m"], ["remember_token", "2b97d9806efe4fe52eef3e64b51eb00ede7c8cfa"], ["updated_at", "2014-06-25 08:59:23.502904"]]
+  [1m[35m (53.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (1.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-90@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:23.637064"], ["email", "example-90@railstutorial.org"], ["name", "Yvonne Sipes Sr."], ["password_digest", "$2a$10$wMMyM9l9xZaAte8A2xzS4eFzYun5lOQr6EcXr5lTTM7cq9mMydQ7C"], ["remember_token", "9030b7d0efbf3b99106535fa36eacdbb07fb7ff3"], ["updated_at", "2014-06-25 08:59:23.637064"]]
+  [1m[35m (51.3ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-91@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:23.770412"], ["email", "example-91@railstutorial.org"], ["name", "Josiane Kessler"], ["password_digest", "$2a$10$LZhRlg1tk8CmFtSUOEAOs.cPTRpTzmwrcW3h0kvipLszYi.w3a01q"], ["remember_token", "e4d1234d4e1683a8602ad090f8201bdf95e99576"], ["updated_at", "2014-06-25 08:59:23.770412"]]
+  [1m[35m (31.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-92@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:23.883487"], ["email", "example-92@railstutorial.org"], ["name", "Dr. Cedrick Walsh"], ["password_digest", "$2a$10$Thj9.iXYBbLUzOEzbzpCIuoDmGaEy5XrOqwlzVnw2eWAMQ7uWCRX2"], ["remember_token", "229767a7d1206b7e949ccdbdb042a4728fa7a594"], ["updated_at", "2014-06-25 08:59:23.883487"]]
+  [1m[35m (66.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-93@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:24.033175"], ["email", "example-93@railstutorial.org"], ["name", "Wayne Gerlach Jr."], ["password_digest", "$2a$10$kjewIGwF1KkxDKtZEjHzXuTWLS8O6oWGZuBS4PsoYsZ0KufE/eBH2"], ["remember_token", "a2807fae01349b85826316381f57dbbb8288d555"], ["updated_at", "2014-06-25 08:59:24.033175"]]
+  [1m[35m (92.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-94@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:24.206867"], ["email", "example-94@railstutorial.org"], ["name", "Jessy Waelchi"], ["password_digest", "$2a$10$xNLx7ELolBghF3M7LQNu/Op9d/A0l6dphifSg6JkE8TYKci2Kq6fi"], ["remember_token", "6f8075890cfe3c053d98020e4d1c3457544b3bfd"], ["updated_at", "2014-06-25 08:59:24.206867"]]
+  [1m[35m (88.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-95@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:24.376596"], ["email", "example-95@railstutorial.org"], ["name", "Rosalyn Wehner"], ["password_digest", "$2a$10$9UTtNLEQTb2AVcoPM0aUHOn5M5WFHislAHrsPL/W4bX3rCZXMXx92"], ["remember_token", "712b766efd6141127d78a85e7d0627234dd4e85c"], ["updated_at", "2014-06-25 08:59:24.376596"]]
+  [1m[35m (51.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-96@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:24.506763"], ["email", "example-96@railstutorial.org"], ["name", "Lorenzo Kuhic"], ["password_digest", "$2a$10$VOhisWTGKU.zEe.kqGk5.eH2VbV3zb5K7UDYJ3d6tU9OxWeQeafhC"], ["remember_token", "399e4d51d3e65edc7e7fd80cee22e2d02358a382"], ["updated_at", "2014-06-25 08:59:24.506763"]]
+  [1m[35m (53.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-97@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:24.640858"], ["email", "example-97@railstutorial.org"], ["name", "Cecile Sporer"], ["password_digest", "$2a$10$LFhf4JghFfg7Ur0MnuS.LudpbrjZ2sOlP7DD3.nQIg/mMi3fWD5yi"], ["remember_token", "36fed2379992b1298ebc27cae213f74e812ceef3"], ["updated_at", "2014-06-25 08:59:24.640858"]]
+  [1m[35m (52.3ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (1.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-98@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:24.773205"], ["email", "example-98@railstutorial.org"], ["name", "Will White"], ["password_digest", "$2a$10$xwf8LJMWQS82I8gVjTup6.Gm0cu7tfuPDT/Eow6zcMPRjcnmkIPb6"], ["remember_token", "540317f40008b2ba7d5b17d6fcfba1ff1698606c"], ["updated_at", "2014-06-25 08:59:24.773205"]]
+  [1m[35m (39.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('example-99@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+Binary data inserted for `string` type on column `remember_token`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 08:59:24.892871"], ["email", "example-99@railstutorial.org"], ["name", "Godfrey Mann V"], ["password_digest", "$2a$10$gLcsRNk78KJTHTVzmY14YehEU4dm154CX.OkIyssGGZsgLnQvJde6"], ["remember_token", "8413955a7a597489e6eab52837976698237f6e51"], ["updated_at", "2014-06-25 08:59:24.892871"]]
+  [1m[35m (52.8ms)[0m  commit transaction
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-25 18:34:15 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered static_pages/home.html.erb within layouts/application (44.6ms)
+Warning. Error encountered while saving cache 0736b41b374e576af7c65dfd92575431b278a6b1/custom.css.scssc: can't dump anonymous class #<Class:0x4eb3580>
+Warning. Error encountered while saving cache 1ec36c3bb02faca7589e6b2021f9f4aa7e13fa9f/bootstrap.scssc: can't dump anonymous class #<Class:0x4eb3580>
+Warning. Error encountered while saving cache 594a67a555ab971c3fe65dd4140e3b3fe5831e67/bootstrap.scssc: can't dump anonymous class #<Class:0x4eb3580>
+Warning. Error encountered while saving cache 594a67a555ab971c3fe65dd4140e3b3fe5831e67/_variables.scssc: can't dump anonymous class #<Class:0x4eb3580>
+Warning. Error encountered while saving cache 594a67a555ab971c3fe65dd4140e3b3fe5831e67/_mixins.scssc: can't dump anonymous class #<Class:0x4eb3580>
+Warning. Error encountered while saving cache 594a67a555ab971c3fe65dd4140e3b3fe5831e67/_reset.scssc: can't dump anonymous class #<Class:0x4eb3580>
+Warning. Error encountered while saving cache 594a67a555ab971c3fe65dd4140e3b3fe5831e67/_scaffolding.scssc: can't dump anonymous class #<Class:0x4eb3580>
+Warning. Error encountered while saving cache 594a67a555ab971c3fe65dd4140e3b3fe5831e67/_grid.scssc: can't dump anonymous class #<Class:0x4eb3580>
+Warning. Error encountered while saving cache 594a67a555ab971c3fe65dd4140e3b3fe5831e67/_layouts.scssc: can't dump anonymous class #<Class:0x4eb3580>
+Warning. Error encountered while saving cache 594a67a555ab971c3fe65dd4140e3b3fe5831e67/_type.scssc: can't dump anonymous class #<Class:0x4eb3580>
+Warning. Error encountered while saving cache 594a67a555ab971c3fe65dd4140e3b3fe5831e67/_code.scssc: can't dump anonymous class #<Class:0x4eb3580>
+Warning. Error encountered while saving cache 594a67a555ab971c3fe65dd4140e3b3fe5831e67/_forms.scssc: can't dump anonymous class #<Class:0x4eb3580>
+Warning. Error encountered while saving cache 594a67a555ab971c3fe65dd4140e3b3fe5831e67/_tables.scssc: can't dump anonymous class #<Class:0x4eb3580>
+Warning. Error encountered while saving cache 594a67a555ab971c3fe65dd4140e3b3fe5831e67/_sprites.scssc: can't dump anonymous class #<Class:0x4eb3580>
+Warning. Error encountered while saving cache 594a67a555ab971c3fe65dd4140e3b3fe5831e67/_dropdowns.scssc: can't dump anonymous class #<Class:0x4eb3580>
+Warning. Error encountered while saving cache 594a67a555ab971c3fe65dd4140e3b3fe5831e67/_wells.scssc: can't dump anonymous class #<Class:0x4eb3580>
+Warning. Error encountered while saving cache 594a67a555ab971c3fe65dd4140e3b3fe5831e67/_component-animations.scssc: can't dump anonymous class #<Class:0x4eb3580>
+Warning. Error encountered while saving cache 594a67a555ab971c3fe65dd4140e3b3fe5831e67/_close.scssc: can't dump anonymous class #<Class:0x4eb3580>
+Warning. Error encountered while saving cache 594a67a555ab971c3fe65dd4140e3b3fe5831e67/_buttons.scssc: can't dump anonymous class #<Class:0x4eb3580>
+Warning. Error encountered while saving cache 594a67a555ab971c3fe65dd4140e3b3fe5831e67/_button-groups.scssc: can't dump anonymous class #<Class:0x4eb3580>
+Warning. Error encountered while saving cache 594a67a555ab971c3fe65dd4140e3b3fe5831e67/_alerts.scssc: can't dump anonymous class #<Class:0x4eb3580>
+Warning. Error encountered while saving cache 594a67a555ab971c3fe65dd4140e3b3fe5831e67/_navs.scssc: can't dump anonymous class #<Class:0x4eb3580>
+Warning. Error encountered while saving cache 594a67a555ab971c3fe65dd4140e3b3fe5831e67/_navbar.scssc: can't dump anonymous class #<Class:0x4eb3580>
+Warning. Error encountered while saving cache 594a67a555ab971c3fe65dd4140e3b3fe5831e67/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x4eb3580>
+Warning. Error encountered while saving cache 594a67a555ab971c3fe65dd4140e3b3fe5831e67/_pagination.scssc: can't dump anonymous class #<Class:0x4eb3580>
+Warning. Error encountered while saving cache 594a67a555ab971c3fe65dd4140e3b3fe5831e67/_pager.scssc: can't dump anonymous class #<Class:0x4eb3580>
+Warning. Error encountered while saving cache 594a67a555ab971c3fe65dd4140e3b3fe5831e67/_modals.scssc: can't dump anonymous class #<Class:0x4eb3580>
+Warning. Error encountered while saving cache 594a67a555ab971c3fe65dd4140e3b3fe5831e67/_tooltip.scssc: can't dump anonymous class #<Class:0x4eb3580>
+Warning. Error encountered while saving cache 594a67a555ab971c3fe65dd4140e3b3fe5831e67/_popovers.scssc: can't dump anonymous class #<Class:0x4eb3580>
+Warning. Error encountered while saving cache 594a67a555ab971c3fe65dd4140e3b3fe5831e67/_thumbnails.scssc: can't dump anonymous class #<Class:0x4eb3580>
+Warning. Error encountered while saving cache 594a67a555ab971c3fe65dd4140e3b3fe5831e67/_media.scssc: can't dump anonymous class #<Class:0x4eb3580>
+Warning. Error encountered while saving cache 594a67a555ab971c3fe65dd4140e3b3fe5831e67/_labels-badges.scssc: can't dump anonymous class #<Class:0x4eb3580>
+Warning. Error encountered while saving cache 594a67a555ab971c3fe65dd4140e3b3fe5831e67/_progress-bars.scssc: can't dump anonymous class #<Class:0x4eb3580>
+Warning. Error encountered while saving cache 594a67a555ab971c3fe65dd4140e3b3fe5831e67/_accordion.scssc: can't dump anonymous class #<Class:0x4eb3580>
+Warning. Error encountered while saving cache 594a67a555ab971c3fe65dd4140e3b3fe5831e67/_carousel.scssc: can't dump anonymous class #<Class:0x4eb3580>
+Warning. Error encountered while saving cache 594a67a555ab971c3fe65dd4140e3b3fe5831e67/_hero-unit.scssc: can't dump anonymous class #<Class:0x4eb3580>
+Warning. Error encountered while saving cache 594a67a555ab971c3fe65dd4140e3b3fe5831e67/_utilities.scssc: can't dump anonymous class #<Class:0x4eb3580>
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 3328ms (Views: 3194.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-25 18:34:20 +0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-06-25 18:34:20 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-06-25 18:34:20 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-06-25 18:34:20 +0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-06-25 18:34:20 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-25 18:34:20 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-25 18:34:20 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-25 18:34:20 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-06-25 18:34:20 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-06-25 18:34:20 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-06-25 18:34:20 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-25 18:34:20 +0800
+
+
+Started GET "/images/rails.png" for 127.0.0.1 at 2014-06-25 18:34:20 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/rails.png"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (30.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (107.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-06-25 18:34:24 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Redirected to http://localhost:3000/signin
+Filter chain halted as :signed_in_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2014-06-25 18:34:24 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (45.0ms)
+Completed 500 Internal Server Error in 50ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    3: 
+    4: <div class="row">
+    5:   <div class="span6 offset3">
+    6:     <%= form_for(@user) do |f| %>
+    7:       <%= render 'shared/error_messages', object: f.object %>
+    8: 
+    9:       <%= f.label :email %>
+  app/views/sessions/new.html.erb:6:in `_app_views_sessions_new_html_erb__467394162_43642236'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.0ms)
+
+
+Started GET "/users/5" for 127.0.0.1 at 2014-06-25 18:34:27 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 5]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?  [["followed_id", 5]]
+  Rendered shared/_stats.html.erb (174.9ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  [1m[35mMicropost Exists (0.0ms)[0m  SELECT  1 AS one FROM "microposts"  WHERE "microposts"."user_id" = ? LIMIT 1  [["user_id", 5]]
+  Rendered users/show.html.erb within layouts/application (192.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 1324ms (Views: 213.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-06-25 18:34:29 +0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-06-25 18:34:29 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-25 18:34:29 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-25 18:34:29 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-25 18:34:29 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-06-25 18:34:29 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-25 18:34:29 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-06-25 18:34:29 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-06-25 18:34:29 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-06-25 18:34:29 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-25 18:34:29 +0800
+
+
+Started GET "/signin" for 127.0.0.1 at 2014-06-25 18:34:43 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    3: 
+    4: <div class="row">
+    5:   <div class="span6 offset3">
+    6:     <%= form_for(@user) do |f| %>
+    7:       <%= render 'shared/error_messages', object: f.object %>
+    8: 
+    9:       <%= f.label :email %>
+  app/views/sessions/new.html.erb:6:in `_app_views_sessions_new_html_erb__467394162_43192212'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-25 18:37:50 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered static_pages/home.html.erb within layouts/application (33.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 56ms (Views: 54.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-06-25 18:37:51 +0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-06-25 18:37:51 +0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-06-25 18:37:51 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-06-25 18:37:51 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-25 18:37:51 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-25 18:37:51 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-25 18:37:51 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-25 18:37:51 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-06-25 18:37:51 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-06-25 18:37:51 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-06-25 18:37:51 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-25 18:37:51 +0800
+
+
+Started GET "/images/rails.png" for 127.0.0.1 at 2014-06-25 18:37:51 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/rails.png"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (63.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-25 18:37:52 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered static_pages/home.html.erb within layouts/application (13.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 47ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-25 18:37:53 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered static_pages/home.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 58ms (Views: 55.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-06-25 18:37:53 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-06-25 18:37:53 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-06-25 18:37:53 +0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-06-25 18:37:53 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-25 18:37:53 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-25 18:37:53 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-25 18:37:53 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-25 18:37:53 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-06-25 18:37:53 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-06-25 18:37:53 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-06-25 18:37:53 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-25 18:37:53 +0800
+
+
+Started GET "/images/rails.png" for 127.0.0.1 at 2014-06-25 18:37:54 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/rails.png"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (54.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-06-25 18:37:58 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Redirected to http://localhost:3000/signin
+Filter chain halted as :signed_in_user rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2014-06-25 18:37:58 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    3: 
+    4: <div class="row">
+    5:   <div class="span6 offset3">
+    6:     <%= form_for(@user) do |f| %>
+    7:       <%= render 'shared/error_messages', object: f.object %>
+    8: 
+    9:       <%= f.label :email %>
+  app/views/sessions/new.html.erb:6:in `_app_views_sessions_new_html_erb__467394162_43642236'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-26 10:12:47 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered static_pages/home.html.erb within layouts/application (14.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 500ms (Views: 407.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-26 10:12:48 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-06-26 10:12:48 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-26 10:12:48 +0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-06-26 10:12:48 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-06-26 10:12:48 +0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-06-26 10:12:48 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-26 10:12:48 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-26 10:12:48 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-06-26 10:12:48 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-06-26 10:12:48 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-06-26 10:12:48 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-26 10:12:48 +0800
+
+
+Started GET "/images/rails.png" for 127.0.0.1 at 2014-06-26 10:12:49 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/rails.png"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (44.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (96.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-26 10:12:52 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered static_pages/home.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 34ms (Views: 31.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-26 10:12:52 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered static_pages/home.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 30ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-06-26 10:12:52 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-06-26 10:12:52 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-06-26 10:12:52 +0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-06-26 10:12:52 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-26 10:12:52 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-26 10:12:52 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-26 10:12:52 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-26 10:12:52 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-06-26 10:12:52 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-06-26 10:12:52 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-06-26 10:12:52 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-26 10:12:52 +0800
+
+
+Started GET "/images/rails.png" for 127.0.0.1 at 2014-06-26 10:12:52 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/rails.png"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (53.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-06-26 10:12:57 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Redirected to http://localhost:3000/signin
+Filter chain halted as :signed_in_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2014-06-26 10:12:57 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (31.0ms)
+Completed 500 Internal Server Error in 37ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    3: 
+    4: <div class="row">
+    5:   <div class="span6 offset3">
+    6:     <%= form_for(@user) do |f| %>
+    7:       <%= render 'shared/error_messages', object: f.object %>
+    8: 
+    9:       <%= f.label :email %>
+  app/views/sessions/new.html.erb:6:in `_app_views_sessions_new_html_erb__281110533_43413720'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2014-06-26 10:18:26 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    3: 
+    4: <div class="row">
+    5:   <div class="span6 offset3">
+    6:     <%= form_for(@user) do |f| %>
+    7:       <%= render 'shared/error_messages', object: f.object %>
+    8: 
+    9:       <%= f.label :email %>
+  app/views/sessions/new.html.erb:6:in `_app_views_sessions_new_html_erb__281110533_43413720'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-26 10:18:30 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered static_pages/home.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 65ms (Views: 30.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-06-26 10:18:30 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-26 10:18:30 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-06-26 10:18:30 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-06-26 10:18:30 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-26 10:18:30 +0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-06-26 10:18:30 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-26 10:18:30 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-26 10:18:30 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-06-26 10:18:30 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-06-26 10:18:30 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-06-26 10:18:31 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-26 10:18:31 +0800
+
+
+Started GET "/images/rails.png" for 127.0.0.1 at 2014-06-26 10:18:31 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/rails.png"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (50.8ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2014-06-26 10:18:32 +0800
+Processing by StaticPagesController#help as HTML
+  Rendered static_pages/help.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 35ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2014-06-26 10:18:32 +0800
+Processing by StaticPagesController#help as HTML
+  Rendered static_pages/help.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 23ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-06-26 10:18:33 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-06-26 10:18:33 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-06-26 10:18:33 +0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-06-26 10:18:33 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-26 10:18:33 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-26 10:18:33 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-26 10:18:33 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-26 10:18:33 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-06-26 10:18:33 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-06-26 10:18:33 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-06-26 10:18:33 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-26 10:18:33 +0800
+
+
+Started GET "/signin" for 127.0.0.1 at 2014-06-26 10:18:34 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    3: 
+    4: <div class="row">
+    5:   <div class="span6 offset3">
+    6:     <%= form_for(@user) do |f| %>
+    7:       <%= render 'shared/error_messages', object: f.object %>
+    8: 
+    9:       <%= f.label :email %>
+  app/views/sessions/new.html.erb:6:in `_app_views_sessions_new_html_erb__281110533_43241376'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.2ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2014-06-26 10:18:34 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    3: 
+    4: <div class="row">
+    5:   <div class="span6 offset3">
+    6:     <%= form_for(@user) do |f| %>
+    7:       <%= render 'shared/error_messages', object: f.object %>
+    8: 
+    9:       <%= f.label :email %>
+  app/views/sessions/new.html.erb:6:in `_app_views_sessions_new_html_erb__281110533_43413720'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.0ms)
